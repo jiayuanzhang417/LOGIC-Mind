@@ -2,23 +2,25 @@ import os
 import json
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-from openai import OpenAI
+import openai
 import time
-
-client = OpenAI(api_key="Your API KEY")
 
 app = Flask(__name__)
 CORS(app)
+
+openai.api_key = "Your api key here"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE_DIR, 'data.json')
 @app.route('/data.json', methods=['GET'])
 def get_data():
-    if not os.path.exists(DATA_FILE):
+    if not os.path.exists(DATA_FILE) or os.stat(DATA_FILE).st_size == 0:
         return jsonify({"nodes": [], "edges": []})
-    response = send_from_directory(BASE_DIR, 'data.json')
-    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
-    return response
+    try:
+        with open(DATA_FILE, 'r', encoding='utf-8') as f:
+            return jsonify(json.load(f))
+    except:
+        return jsonify({"nodes": [], "edges": []})
 
 @app.route('/save_logic', methods=['POST'])
 def save_logic():
