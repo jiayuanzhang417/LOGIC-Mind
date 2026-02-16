@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "id": "n1",
+        "label": "Learn Rules",
+        "color": "#00ffcc",
+        "textColor": "#ffffff",
+        "shape": "triangle"
+      },
+      "position": {
+        "x": 32.90057339816269,
+        "y": 4.990881395807926
+      }
+    },
+    {
+      "data": {
+        "id": "n2",
+        "label": "Study Openings",
+        "color": "#1e90ff",
+        "textColor": "#ffffff",
+        "shape": "ellipse"
+      },
+      "position": {
+        "x": 41.79492651624814,
+        "y": 168.44233094702767
+      }
+    },
+    {
+      "data": {
+        "id": "n3",
+        "label": "Practice Regularly",
+        "color": "#ff4757",
+        "textColor": "#ffffff",
+        "shape": "diamond"
+      },
+      "position": {
+        "x": 234.98226746273707,
+        "y": -5.753865490781877
+      }
+    },
+    {
+      "data": {
+        "id": "n4",
+        "label": "Analyze Games",
+        "color": "#ffa502",
+        "textColor": "#ffffff",
+        "shape": "ellipse"
+      },
+      "position": {
+        "x": 413.9832561840258,
+        "y": 238.14049622735917
+      }
+    },
+    {
+      "data": {
+        "id": "n5",
+        "label": "Improve Tactics",
+        "color": "#2ed573",
+        "textColor": "#ffffff",
+        "shape": "ellipse"
+      },
+      "position": {
+        "x": 497.5101579651209,
+        "y": -19.06423759474896
+      }
+    },
+    {
+      "data": {
+        "id": "n6",
+        "label": "Learn End Games",
+        "color": "#00d2ff",
+        "textColor": "#ffffff",
+        "shape": "ellipse"
+      },
+      "position": {
+        "x": 234.98226746273707,
+        "y": 221.7461345092181
+      }
+    }
+  ],
+  "edges": [
+    {
+      "data": {
+        "id": "e1",
+        "source": "n1",
+        "target": "n3",
+        "relationship": "foundation",
+        "color": "#00ffcc",
+        "curveStyle": "bezier",
+        "textColor": "#ffffff",
+        "label": "foundation"
+      }
+    },
+    {
+      "data": {
+        "id": "e2",
+        "source": "n2",
+        "target": "n3",
+        "relationship": "strategy",
+        "color": "#00ffcc",
+        "curveStyle": "bezier",
+        "textColor": "#ffffff",
+        "label": "strategy"
+      }
+    },
+    {
+      "data": {
+        "id": "e3",
+        "source": "n3",
+        "target": "n4",
+        "relationship": "experience",
+        "color": "#00ffcc",
+        "curveStyle": "bezier",
+        "textColor": "#ffffff",
+        "label": "experience"
+      }
+    },
+    {
+      "data": {
+        "id": "e4",
+        "source": "n4",
+        "target": "n5",
+        "relationship": "insight",
+        "color": "#00ffcc",
+        "curveStyle": "bezier",
+        "textColor": "#ffffff",
+        "label": "insight"
+      }
+    },
+    {
+      "data": {
+        "id": "e5",
+        "source": "n3",
+        "target": "n5",
+        "relationship": "enhancement",
+        "color": "#00ffcc",
+        "curveStyle": "bezier",
+        "textColor": "#ffffff",
+        "label": "enhancement"
+      }
+    },
+    {
+      "data": {
+        "id": "e6",
+        "source": "n5",
+        "target": "n6",
+        "relationship": "complex understanding",
+        "color": "#00ffcc",
+        "curveStyle": "bezier",
+        "textColor": "#ffffff",
+        "label": "complex understanding"
+      }
+    }
+  ],
+  "title": "How to be good at chess"
+}
