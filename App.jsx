@@ -501,6 +501,7 @@ const handleManualArchive = () => {
     </div>
 
     <hr style={{ border: 'none', borderTop: '1px solid #1e293b', margin: '0' }} />
+
     {selectedElement.isNode() ? (
       <div>
         <label style={{ fontSize: '11px', color: '#64748b', display: 'block', marginBottom: '8px' }}>NODE SHAPE</label>
