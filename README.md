@@ -77,3 +77,14 @@ Generate: Click the button. The AI will analyze the logic and draw a graph.
 Edit: You can move nodes or right-click to create new connections manually.
 
 Save: Hit "Save" to move your current logic from data.json to the history/ folder.
+
+### 5. Skill Development
+Basic Full-Stack development skill: Learned how to connect a React frontend to a Flask backend to handle data.
+
+Using Graph Libraries: Learned to use Cytoscape.js to transform data into visual nodes and lines.
+
+Tool Integration: Figured out how to send user text to GEN AI and get back a specific feedback format the program can read.
+
+UI/UX experience: Added simple interactive features like right-clicking to link nodes, undo button, personal styling to nodes and lines, making the tool more flexible and interactive for the user.
+
+Debugging: Spent time fixing server errors and data saving issues, which helped me understand more how frontend and backend work.
