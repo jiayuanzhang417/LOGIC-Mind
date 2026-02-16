@@ -433,7 +433,7 @@ const handleManualArchive = () => {
     <div style={{ display: 'flex', width: '100vw', height: '100vh', backgroundColor: '#050a10', color: 'white', overflow: 'hidden', fontFamily: 'sans-serif' }}>
 <aside style={{ width: '280px', backgroundColor: '#0f172a', borderRight: '1px solid #1e293b', display: 'flex', flexDirection: 'column', zIndex: 60 }}>
   <div style={{ padding: '20px', borderBottom: '1px solid #1e293b' }}>
-    <h2 style={{ fontSize: '18px', color: '#00d2ff', margin: 0, letterSpacing: '1px' }}>LOGIC FLOW</h2>
+    <h2 style={{ fontSize: '18px', color: '#00d2ff', margin: 0, letterSpacing: '1px' }}>LOGIC Mind</h2>
   </div>
   <div style={{ flex: 1, overflowY: 'auto', padding: '10px' }}>
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', padding: '0 10px' }}>
