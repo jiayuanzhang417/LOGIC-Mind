@@ -11,25 +11,55 @@ Reconsider an issue with more rational perspective
 Visualize interconnections between events
 
 ***2. Deployment Notes&Tech stack***
+### 1. Prerequisites
+Node.js (v16+)
 
+Python (3.8+)
 
-3. Core Capabilities
-Prompt-to-Map Generation: Leverages AI to parse natural language into structured logic nodes instantly.
+OpenAI API Key
 
-Dynamic Topological Control: Full agency over node geometry (Ellipse, Diamond, Triangle) and edge curvature styles (Bezier, Taxi, etc.).
+**App.jsx** Main designing for the website.
+**my_logic_ai.py**	Backend server, connects to AI model and get feedback.
+**history/**	Example of it is the Logic_XXXXX(numbers).json, it is the folder where the document you saved goes.
+**data.json**	It is the initial file from AI, you can save it by hitting the save button, and it converts to the history file
 
-Persistent Library: A dedicated sidebar to manage your "thought archives"—supporting CRUD operations (Create, Read, Update, Delete) on all logic sessions.
+### 2. Key Dependencies (Automatically installed)
+The project uses several powerful libraries. You don't need to install them manually one by one; just follow the installation steps below:
 
-Text-Edge Synchronization: Real-time double-click editing for both node labels and relationship links.
+* **Cytoscape.js**: The core engine for drawing the logic graphs.
+* **Flask-CORS**: To let the Frontend talk to the Backend.
+* **OpenAI SDK**: To connect with GPT-4o.
 
-4. Engineering Reflection (The "Bugs" I Conquered)
-The most significant challenge was implementing Debounced State Persistence. Initially, rapid color updates would flood the Undo stack. I solved this by implementing a timer-based recorder that only captures "meaningful" changes, preserving memory and user intent.
+### 3. Setup & Installation
+Step 1: Backend
+Install Python libraries:
 
-Another breakthrough was the Two-Way Data Binding for edge labels. Ensuring that a visual change in the style panel reflected immediately in the Cytoscape data layer required a deep dive into the library’s event-emitter cycle.
+Bash
+pip install flask flask-cors openai
 
-5. Future Research & Scalability
-Pathfinding Integration: Implementing Dijkstra’s Algorithm to identify critical paths in complex logic chains.
+Setup API Key:
+Replace your API Key in the python file
 
-Collaborative Logic: Transitioning to WebSockets for real-time, multi-user logic brainstorming.
+Run Server:
 
-Semantic Clustering: Using NLP embeddings to automatically group related thought clusters.
+Bash
+python my_logic_ai.py
+
+Step 2: Frontend
+Install Node packages:
+
+Bash
+npm install
+Start App:
+
+Bash
+npm run dev
+
+### 4. How to Use (In the Webpage)
+Enter your text: Type any complex idea or problem in the input box.
+
+Generate: Click the button. The AI will analyze the logic and draw a graph.
+
+Edit: You can move nodes or right-click to create new connections manually.
+
+Save: Hit "Save" to move your current logic from data.json to the history/ folder.
