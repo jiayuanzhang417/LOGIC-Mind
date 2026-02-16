@@ -7,10 +7,14 @@
 It merges generative AI and a webpage based graph editor, in order to help with:
 
 Brainstorming abstract ideas
+
+
 Reconsider an issue with more rational perspective
+
+
 Visualize interconnections between events
 
-***2. Deployment Notes&Tech stack***
+
 ### 1. Prerequisites
 Node.js (v16+)
 
