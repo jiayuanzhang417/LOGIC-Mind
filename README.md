@@ -18,17 +18,31 @@ Python (3.8+)
 
 OpenAI API Key
 
+### Files
 **App.jsx** Main designing for the website.
+
+
 **my_logic_ai.py**	Backend server, connects to AI model and get feedback.
+
+
 **history/**	Example of it is the Logic_XXXXX(numbers).json, it is the folder where the document you saved goes.
+
+
 **data.json**	It is the initial file from AI, you can save it by hitting the save button, and it converts to the history file
+
+
 
 ### 2. Key Dependencies (Automatically installed)
 The project uses several powerful libraries. You don't need to install them manually one by one; just follow the installation steps below:
 
 * **Cytoscape.js**: The core engine for drawing the logic graphs.
+
+
 * **Flask-CORS**: To let the Frontend talk to the Backend.
+
+
 * **OpenAI SDK**: To connect with GPT-4o.
+
 
 ### 3. Setup & Installation
 Step 1: Backend
