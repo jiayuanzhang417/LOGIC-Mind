@@ -200,7 +200,7 @@ function App() {
   })
   .then(res => res.json())
   .then(() => {
-    alert("Disk Saved! ✅");
+    alert("Disk Saved! ");
     fetchHistoryList(); 
   })
   .catch(err => console.error("Save failed:", err));
@@ -245,7 +245,7 @@ const handleManualArchive = () => {
           .then(res => res.json())
           .then(historyData => {
             setHistory(historyData);
-            alert(`Archived as: ${archiveName} ✅`);
+            alert(`Archived as: ${archiveName} `);
           });
       } else {
         alert("Error: " + data.message);
@@ -536,7 +536,7 @@ const handleManualArchive = () => {
               if(!selectedElement.isNode()) selectedElement.style('target-arrow-color', c);
             }} 
             style={{ 
-              width: '28px', height: '28px', backgroundColor: c, borderRadius: '50%', // 改成圆形更像调色盘
+              width: '28px', height: '28px', backgroundColor: c, borderRadius: '50%',
               cursor: 'pointer', border: selectedElement.data('color') === c ? '2px solid #00d2ff' : '1px solid #334155',
               boxShadow: selectedElement.data('color') === c ? '0 0 8px #00d2ff' : 'none'
             }} 
